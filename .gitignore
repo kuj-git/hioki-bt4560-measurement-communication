@@ -1,0 +1,14 @@
+# Measurement Data and Results
+raw_data/
+plotts/
+*.csv
+*.png
+
+# Python
+__pycache__/
+.venv*/
+
+low_freq_stat.py
+statistics_Impedance.py
+Nyquist_from_csv.py
+Nyquist_from_multiple_csv.py
