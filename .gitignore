@@ -9,6 +9,6 @@ __pycache__/
 .venv*/
 
 low_freq_stat.py
-statistics_Impedance.py
-Nyquist_from_csv.py
-Nyquist_from_multiple_csv.py
+impedance_meas_statistics.py
+nyquist_from_csv.py
+nyquist_from_multiple_csv.py
