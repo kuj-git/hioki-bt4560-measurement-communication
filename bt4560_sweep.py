@@ -22,12 +22,12 @@ BAUD = 9600              # irrelevant for USB, must match the instrument for RS-
 Z_SPEED = "SLOW"          # "FAST" / "MED" / "SLOW"  (impedance measurement)
 V_SPEED = "FAST"          # "FAST" / "MED" / "SLOW"  (voltage measurement)
 
-RANGE_OHM = 3e-3         # 3 mOhm range 1.5 A, 10 mOhm 500 mA, 100 mOhm 50 mA rms
+RANGE_OHM = 100e-3         # 3 mOhm range 1.5 A, 10 mOhm 500 mA, 100 mOhm 50 mA rms
 F_MIN, F_MAX = 0.1, 1050.0  # full frequency range of BT4560-50 (BT4560: from 0.1 Hz)? Stimmt das? oder haben wir -50
 POINTS_PER_DECADE = 10   # log-spaced frequencies per factor of 10, both ends included
 
-EXCLUDED_HZ = [50.0, 100.0]  # mains frequency and 2nd harmonic, skipped
-EXTRA_HZ = [0.01]            # measure additional frequencies
+EXCLUDED_HZ = [0.1, 1050.0]  # mains frequency and 2nd harmonic, skipped
+EXTRA_HZ = []               # measure additional frequencies
 EXCLUDE_TOL_HZ = 3.0         # absolute exclusion band: f within ±3 Hz is skipped
 
 FREQ_SETTLE_S = 0.5      # pause after sending :FREQ so the instrument has processed the command; no current flows yet, settling of the sample is done by SAMPLE_DELAY_WAVES
